@@ -3,124 +3,87 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>دفتر خدمات مالیاتی عبدالقادر غوربانی</title>
+    <title>مقالات - دفتر غوربانی</title>
     <style>
         body {
-            font-family: Tahoma, sans-serif;
             background-color: #111;
-            color: #FFD700;
+            color: gold;
+            font-family: Tahoma, sans-serif;
             margin: 0;
             padding: 0;
-            direction: rtl;
         }
-        header, nav, footer {
+        header {
+            background-color: #000;
+            padding: 20px;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        .container {
             padding: 20px;
         }
-        nav a {
-            color: #FFD700;
-            margin: 0 15px;
-            text-decoration: none;
+        .article {
+            background-color: #1a1a1a;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #000;
         }
-        section {
-            padding: 30px;
+        .article img {
+            max-width: 100%;
+            border-radius: 10px;
         }
-        textarea, input[type='text'] {
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            right: 0;
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 16px;
-            direction: rtl;
+            height: 100%;
         }
-        .video, .image {
-            margin: 20px 0;
-        }
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-        }
-        .whatsapp {
-            position: fixed;
-            left: 20px;
-            bottom: 20px;
-            background: #25D366;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            color: gold;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>مقالات ما</h1>
+    </header>
+    <div class="container">
+        <div class="article">
+            <h2>مالیه، کشور ما، آینده ما</h2>
+            <p>مالیه یکی از منابع اصلی تأمین درآمد دولت‌ها می‌باشد. در افغانستان، نظام مالیاتی نیاز به توسعه و نظارت دقیق دارد. ما در دفتر غوربانی تلاش داریم تا با ارائه خدمات تخصصی، کسب‌وکارها را در تنظیم درست اظهارنامه‌های مالیاتی یاری کنیم.</p>
+            <img src="https://example.com/image.jpg" alt="نمونه تصویر مالیاتی">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>دفتر غوربانی | تمامی حقوق محفوظ است - 2025</p>
+    </footer>
 
-<header>
-    <img src="logo.png" alt="لوگو" width="80">
-    <h1>دفتر خدمات مالیاتی عبدالقادر غوربانی</h1>
-    <p>محاسبه دقیق و سریع اظهارنامه‌های مالیاتی شما</p>
-</header>
+<a href="https://wa.me/93798324110" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; font-family: Tahoma;">تماس واتساپ</a>
 
-<nav>
-    <a href="#about">درباره ما</a>
-    <a href="#services">خدمات</a>
-    <a href="#article">مقالات</a>
-    <a href="#contact">تماس با ما</a>
-</nav>
 
-<section id="about">
-    <h2>درباره ما</h2>
-    <p>دارای تحصیلات عالی در رشته اقتصاد و حسابداری با بیش از ۲۰ سال سابقه کاری در وزارت مالیه افغانستان.</p>
-</section>
-
-<section id="services">
-    <h2>خدمات ما</h2>
-    <ul>
-        <li>ارائه خدمات اظهارنامه مالیاتی</li>
-        <li>مشاوره مالی و حسابداری</li>
-        <li>تنظیم اسناد مالی شرکت‌ها</li>
-    </ul>
-</section>
-
-<section id="article">
-    <h2>مقالات و رسانه‌ها</h2>
-
-    <label>📝 مقاله خود را بنویسید:</label>
-    <textarea rows="5" placeholder="مقاله را اینجا بنویسید..."></textarea>
-
-    <label>🖼 آدرس عکس را وارد کنید:</label>
-    <input type="text" placeholder="مثلاً: https://example.com/image.jpg">
-    <div class="image"><img src="" alt="" id="userImage" style="max-width:100%; display:none;"></div>
-
-    <label>🎥 آدرس ویدیو یوتیوب را وارد کنید:</label>
-    <input type="text" placeholder="مثلاً: https://www.youtube.com/embed/VIDEO_ID">
-    <div class="video"><iframe src="" id="userVideo" style="display:none;"></iframe></div>
-</section>
-
-<section id="contact">
+<footer style="background-color: #0c0c0c; color: gold; text-align: center; padding: 20px; font-family: Tahoma;">
     <h2>تماس با ما</h2>
     <p>سرک ولایت، کریمی پلازا، مقابل انستیتوت زراعت، ولایت هرات</p>
     <p>مبایل: 0798324110</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/93798324110" target="_blank">تماس واتساپ</a>
-
-<footer>
     <p>© 2025 دفتر غوربانی. تمام حقوق محفوظ است.</p>
 </footer>
-
-<script>
-document.querySelectorAll("input[type='text']")[0].addEventListener("change", function() {
-    const img = document.getElementById("userImage");
-    img.src = this.value;
-    img.style.display = 'block';
-});
-document.querySelectorAll("input[type='text']")[1].addEventListener("change", function() {
-    const vid = document.getElementById("userVideo");
-    vid.src = this.value;
-    vid.style.display = 'block';
-});
-</script>
 
 </body>
 </html>
