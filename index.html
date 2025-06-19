@@ -1,216 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دفتر خدمات مالیاتی عبدالقدیر غوریانی</title>
-  <style>
-    body {
-      font-family: 'Tahoma', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: gold;
-    }
-    header {
-      background-color: #000;
-      padding: 30px;
-      text-align: center;
-    }
-    header img {
-      max-width: 100px;
-      display: block;
-      margin: 0 auto 15px;
-    }
-    header h1 {
-      font-size: 32px;
-      margin: 0;
-    }
-    header p {
-      font-size: 18px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #222;
-      padding: 10px 0;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: gold;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .services li {
-      margin-bottom: 10px;
-    }
-    footer {
-      background-color: #000;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-    .contact p, .about p {
-      line-height: 1.8;
-    }
-    .lang-toggle {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-    }
-    .article, .image, .video {
-      margin-top: 30px;
-    }
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      .lang-toggle {
-        position: static;
-        text-align: center;
-        margin-top: 10px;
-      }
-    }
-  </style>
-  <script>
-    function toggleLang(lang) {
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
-      });
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دفتر خدمات مالیاتی عبدالقادر غوربانی</title>
+    <style>
+        body {
+            background-color: #111;
+            color: gold;
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 30px 10px 10px;
+        }
+        header img {
+            height: 80px;
+        }
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 30px 20px;
+        }
+        h2 {
+            border-bottom: 2px solid gold;
+            padding-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #000;
+            padding: 20px;
+            font-size: 0.9em;
+            color: gold;
+        }
+        .contact {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .contact a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+        input[type=text], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+        }
+        iframe, img {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-<body onload="toggleLang('fa')">
-  <div class="lang-toggle">
-    <button onclick="toggleLang('fa')">فارسی</button>
-    <button onclick="toggleLang('en')">English</button>
-  </div>
+<body>
 
-  <header>
-    <img src="logo.png" alt="لوگوی غوریانی">
-    <h1 data-lang="fa">دفتر خدمات مالیاتی عبدالقدیر غوریانی</h1>
-    <h1 data-lang="en" style="display:none">Abdulqader Ghoryani Tax Services Office</h1>
-    <p data-lang="fa">محاسبه دقیق و سریع اظهارنامه‌های مالیاتی شما</p>
-    <p data-lang="en" style="display:none">Accurate and Fast Tax Return Calculations</p>
-  </header>
+<header>
+    <img src="logo.png" alt="لوگو">
+    <h1>دفتر خدمات مالیاتی عبدالقادر غوربانی</h1>
+    <p>محاسبه دقیق و سریع اظهارنامه‌های مالیاتی شما</p>
+</header>
 
-  <nav>
-    <a href="#about">درباره ما / About</a>
-    <a href="#services">خدمات / Services</a>
-    <a href="#media">مطالب / Media</a>
-    <a href="#contact">تماس با ما / Contact</a>
-  </nav>
+<nav>
+    <a href="#about">درباره ما</a>
+    <a href="#services">خدمات ما</a>
+    <a href="#article">مقاله</a>
+    <a href="#contact">تماس با ما</a>
+</nav>
 
-  <section id="about" class="about">
-    <h2 data-lang="fa">درباره ما</h2>
-    <h2 data-lang="en" style="display:none">About Us</h2>
-    <p data-lang="fa">دارای تحصیلات عالی در رشته اقتصاد و حسابداری با بیش از ۲۰ سال سابقه کاری در وزارت مالیه افغانستان. خدمات ما با دقت، سرعت و اطمینان کامل ارائه می‌گردد.</p>
-    <p data-lang="en" style="display:none">With advanced education in economics and accounting and over 20 years of experience in Afghanistan's Ministry of Finance, we provide services with accuracy, speed, and full reliability.</p>
-  </section>
-
-  <section id="services" class="services">
-    <h2 data-lang="fa">خدمات ما</h2>
-    <h2 data-lang="en" style="display:none">Our Services</h2>
-    <ul data-lang="fa">
-      <li>تهیه گزارش مالی و بیلانس شیت سالانه</li>
-      <li>مشاوره مالیاتی حرفه‌ای</li>
-      <li>تنظیم اظهارنامه مالیاتی</li>
-      <li>طراحی سیستم حسابداری</li>
-      <li>ثبت شرکت</li>
-      <li>پذیرش کارآموز در بخش مالیاتی و حسابداری</li>
-    </ul>
-    <ul data-lang="en" style="display:none">
-      <li>Preparation of financial reports and annual balance sheets</li>
-      <li>Professional tax consultation</li>
-      <li>Tax return preparation</li>
-      <li>Accounting system design</li>
-      <li>Company registration</li>
-      <li>Internship opportunities in accounting and taxation</li>
-    </ul>
-  </section>
-
-  <section id="media">
-    <h2 data-lang="fa">مطالب و رسانه‌ها</h2>
-    <h2 data-lang="en" style="display:none">Articles & Media</h2>
-
-    <div class="article">
-      <h3 data-lang="fa">📝 مقاله</h3>
-      <h3 data-lang="en" style="display:none">📝 Article</h3>
-      
-<p data-lang="fa">
-  مالیات یکی از منابع اصلی تأمین درآمد دولت‌ها می‌باشد. در افغانستان، نظام مالیاتی نیاز به توسعه و نظارت دقیق دارد.
-  ما در دفتر غوریانی تلاش داریم تا با ارائه خدمات تخصصی، کسب‌وکارها را در تنظیم درست اظهارنامه‌ها یاری کنیم.
-</p>
-<p data-lang="en" style="display:none">
-  Tax is one of the main sources of government revenue. In Afghanistan, the tax system needs careful supervision and development.
-  At Ghoryani Office, we strive to assist businesses in proper tax reporting through our expert services.
-</p>
-
-      <p data-lang="en" style="display:none">Write your article here...</p>
-    </div>
-
-    <div class="image">
-      <h3 data-lang="fa">🖼️ عکس</h3>
-      <h3 data-lang="en" style="display:none">🖼️ Image</h3>
-      <img src="your-image.jpg" alt="تصویر شما" style="max-width:100%; border: 2px solid gold;">
-    </div>
-
-    <div class="video">
-      <h3 data-lang="fa">🎥 ویدیو</h3>
-      <h3 data-lang="en" style="display:none">🎥 Video</h3>
-      <video controls width="100%">
-        <source src="your-video.mp4" type="video/mp4">
-        مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
-      </video>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2 data-lang="fa">تماس با ما</h2>
-    <h2 data-lang="en" style="display:none">Contact Us</h2>
-    <p data-lang="fa">آدرس: افغانستان، هرات، سرک ولایت، کریمی پلازا، مقابل انستیتوت زراعت، اطاق شماره ۳۲</p>
-    <p data-lang="en" style="display:none">Address: Afghanistan, Herat, Walayat Street, Karimi Plaza, Opposite Agricultural Institute, Room No. 32</p>
-    <p>موبایل / WhatsApp: 0798324110</p>
-    <p>تلگرام / Telegram: 0708641733</p>
-    <p>Email: aminq7162@gmail.com</p>
-  
-<!-- واتساپ -->
-<div style="margin-top: 30px;">
-  <a href="https://wa.me/93798324110" target="_blank" 
-     style="background-color: green; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px;">
-    گفتگو در واتساپ 📱
-  </a>
-</div>
-
-<!-- فرم تماس سریع -->
-<div style="margin-top: 30px;">
-  <form action="mailto:aminq7162@gmail.com" method="post" enctype="text/plain">
-    <label>نام شما:</label><br>
-    <input type="text" name="name" required><br><br>
-    <label>پیام:</label><br>
-    <textarea name="message" rows="4" required></textarea><br><br>
-    <button type="submit">ارسال پیام ✉️</button>
-  </form>
-</div>
-
-<!-- نقشه گوگل -->
-<div style="margin-top: 30px;">
-  <iframe 
-    src="https://www.google.com/maps?q=Herat,+Karimi+Plaza&output=embed"
-    width="100%" height="300" style="border:2px solid gold; border-radius: 10px;" allowfullscreen="" loading="lazy">
-  </iframe>
-</div>
-
+<section id="about">
+    <h2>درباره ما</h2>
+    <p>دارای تحصیلات عالی در رشته اقتصاد و حسابداری با بیش از ۲۰ سال سابقه کاری در وزارت مالیه افغانستان. خدمات ما با دقت، سرعت و اطمینان کامل ارائه می‌گردد.</p>
 </section>
 
-  <footer>
-    <p data-lang="fa">&copy; 2025 دفتر خدمات مالیاتی عبدالقدیر غوریانی. تمامی حقوق محفوظ است.</p>
-    <p data-lang="en" style="display:none">&copy; 2025 Abdulqader Ghoryani Tax Services Office. All rights reserved.</p>
-  </footer>
+<section id="services">
+    <h2>خدمات ما</h2>
+    <ul>
+        <li>تهیه و تنظیم اظهارنامه مالیاتی</li>
+        <li>مشاوره حسابداری برای شرکت‌ها</li>
+        <li>ارائه گزارشات مالی</li>
+        <li>تهیه دفاتر قانونی</li>
+    </ul>
+</section>
+
+<section id="article">
+    <h2>مقاله / عکس / ویدیو</h2>
+    <label>آدرس عکس:</label>
+    <input type="text" id="imageURL" placeholder="https://example.com/image.jpg" oninput="showImage()">
+    <div id="imageContainer"></div>
+
+    <label>آدرس ویدیو (YouTube Embed):</label>
+    <input type="text" id="videoURL" placeholder="https://www.youtube.com/embed/..." oninput="showVideo()">
+    <div id="videoContainer"></div>
+
+    <label>مقاله شما:</label>
+    <textarea id="articleText" rows="6" placeholder="مقاله خود را بنویسید..." oninput="showText()"></textarea>
+    <div id="textContainer"></div>
+</section>
+
+<section id="contact">
+    <h2>تماس با ما</h2>
+    <p>سرک ولایت، کریمی پلازا، مقابل انستیتوت زراعت، ولایت هرات</p>
+    <p>مبایل: 0798324110</p>
+    <p>واتساپ و تلگرام فعال</p>
+    <iframe src="https://maps.google.com/maps?q=Herat&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" frameborder="0"></iframe>
+</section>
+
+<div class="contact">
+    <a href="https://wa.me/93798324110" target="_blank">تماس واتساپ</a>
+</div>
+
+<footer>
+    © 2025 دفتر غوربانی - تمام حقوق محفوظ است.
+</footer>
+
+<script>
+    function showImage() {
+        const url = document.getElementById('imageURL').value;
+        document.getElementById('imageContainer').innerHTML = url ? '<img src="' + url + '">' : '';
+    }
+    function showVideo() {
+        const url = document.getElementById('videoURL').value;
+        document.getElementById('videoContainer').innerHTML = url ? '<iframe width="100%" height="300" src="' + url + '" frameborder="0" allowfullscreen></iframe>' : '';
+    }
+    function showText() {
+        const text = document.getElementById('articleText').value;
+        document.getElementById('textContainer').innerHTML = text ? '<p>' + text + '</p>' : '';
+    }
+</script>
+
 </body>
 </html>
